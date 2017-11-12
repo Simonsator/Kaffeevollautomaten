@@ -1,30 +1,23 @@
 public class Hotdrink {
-	private String name;
-	private float waterNeeded;
-	private float milkNeeded;
-	private float coffeeBeanNeeded;
-
-	public Hotdrink(String pName, float pWaterNeeded, float pCoffeeBeanNeeded, float pMilkNeeded) {
-		name = pName;
-		waterNeeded = pWaterNeeded;
-		coffeeBeanNeeded = pCoffeeBeanNeeded;
-		milkNeeded = pMilkNeeded;
-	}
+	public String name;
+	public double water;
+	public double milk;
+	public double beans;
 
 	@Override
 	public String toString() {
 		return name;
 	}
 
-	public float getWaterNeeded() {
-		return waterNeeded;
+	public double getWaterNeeded() {
+		return water;
 	}
 
-	public float getMilkNeeded() {
-		return milkNeeded;
+	public double getMilkNeeded() {
+		return milk;
 	}
 
-	public float getCoffeeBeanNeeded() {
-		return coffeeBeanNeeded;
+	public double getCoffeeBeanNeeded() {
+		return beans;
 	}
 }
